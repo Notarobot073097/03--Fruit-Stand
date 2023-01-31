@@ -1,0 +1,16 @@
+header{
+    padding: 2rem $gutter;
+    h1{
+        font-size: 1.5rem;
+    }
+    h2{
+        font-size: 1.5rem;
+    }
+body{
+    background-color: red;
+}
+    div.figureGallery figure{
+        flex-basis: 24%;
+    }
+
+}

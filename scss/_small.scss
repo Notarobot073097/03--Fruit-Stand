@@ -1,0 +1,105 @@
+/* Prevent adjustments of font size after orientation changes. */
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+  height: 100%;
+}
+
+/*---- apply a natural box layout model to all elements -------*/
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  font-family: $defaultfont;
+  font-weight: $normalweight;
+  color: $textcolor;
+}
+
+#headerWrapper {
+  color: $secondaryColor;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 50px auto;
+  padding: 1rem $gutter;
+  gap: 12px;
+  h1 {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: $normalweight;
+  }
+  h2 {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: $normalweight;
+  }
+}
+
+#navWrapper {
+  background-color: #fff;
+}
+
+nav {
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    border: 1px solid #000000;
+    li {
+      flex: 1;
+      border: 1px solid #000000;
+      font-size: 1.2rem;
+    }
+  }
+  li.active {
+    background-color: #ede4e3;
+  }
+  a {
+    display: block;
+    padding: 0.5rem;
+    text-align: center;
+    text-decoration: none;
+    &:hover {color : #ff0000}
+  }
+}
+
+div.figureGallery{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+div.figureGallery figure{
+  flex-basis: 46%;
+  margin: 1rem 2%;
+}
+
+div.figureGallery figure img{
+  width: 100%;
+}
+
+figcaption{
+  text-align: center;
+  font-weight: $lightweight;
+  font-size: 1.2rem;
+}
+
+#footerWrapper {
+  background-color: #ede4e3;
+}
+
+footer{
+  padding: 0.25rem $gutter;
+  max-width: 80%;
+  p{
+    margin: 0;
+    font-weight: $lightweight;
+    text-align: center;
+  }
+}
