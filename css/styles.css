@@ -333,7 +333,7 @@ body {
 }
 
 #headerWrapper {
-  color: #ffa500;
+  color: #222;
 }
 
 header {
@@ -374,7 +374,7 @@ nav li.active {
   background-color: #74201c;
 }
 nav a {
-  color: #ffa500;
+  color: #ffffff;
   display: block;
   padding: 0.5rem;
   text-align: center;
@@ -385,7 +385,7 @@ nav a:hover {
   color: #090909;
 }
 nav ul li a {
-  border-top: 1px solid #ffa500;
+  border-top: 1px solid #ffffff;
 }
 
 div.figureGallery {
