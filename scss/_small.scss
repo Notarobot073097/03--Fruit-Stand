@@ -46,27 +46,34 @@ header {
 }
 
 nav {
+  background-color: darken($menucolor, 10%);
+
   ul {
     list-style: none;
     padding: 0;
     margin: 0;
-    display: flex;
-    border: 1px solid #000000;
+    display: block;
+    justify-content: center;
     li {
-      flex: 1;
-      border: 1px solid #000000;
       font-size: 1.2rem;
     }
   }
   li.active {
-    background-color: #ede4e3;
+    background-color: darken($menucolor, 20%);
   }
   a {
+    color: $secondaryColor;
     display: block;
     padding: 0.5rem;
     text-align: center;
     text-decoration: none;
-    &:hover {color : #ff0000}
+    &:hover {
+      background-color: lighten($menucolor, 10%);
+      color : darken($textcolor, 10%);
+    }
+  }
+  ul li a{
+    border-top: 1px solid $secondaryColor;
   }
 }
 
@@ -90,9 +97,6 @@ figcaption{
   font-size: 1.2rem;
 }
 
-#footerWrapper {
-  background-color: #ede4e3;
-}
 
 footer{
   padding: 0.25rem $gutter;
