@@ -353,6 +353,10 @@ header h2 {
   font-weight: 500;
 }
 
+main h1 {
+  padding: 0 16px;
+}
+
 #navWrapper {
   background-color: #fff;
 }
